@@ -1,7 +1,7 @@
 name: flip
 
 # Every ~10 minutes, promote the current movie to "last watched" once it has
-# been playing for 3 hours. GitHub's scheduled crons can run a few minutes late
+# been playing for 1 hour. GitHub's scheduled crons can run a few minutes late
 # under load; that only delays the flip slightly, it does not lose data.
 on:
   schedule:

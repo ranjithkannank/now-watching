@@ -16,7 +16,7 @@ from datetime import datetime, timedelta, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data.json")
-WATCH_HOURS = 3
+WATCH_HOURS = 1
 
 FMT = "%Y-%m-%dT%H:%M:%SZ"
 

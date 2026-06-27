@@ -17,7 +17,6 @@
   h1 { font-size: 22px; margin: 0 0 24px; }
   h2 { font-size: 15px; color: #666; margin: 40px 0 12px; font-weight: 600; }
   #now { font-size: 28px; font-weight: 700; margin: 0 0 6px; }
-  #now .left { font-size: 15px; font-weight: 400; color: #888; }
   .last { color: #555; margin: 0; }
   ul { margin: 0; padding: 0; list-style: none; }
   li { padding: 8px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; }
@@ -36,17 +35,9 @@
 <ul id="list"></ul>
 
 <script>
-const WATCH_HOURS = 3;
-
 function fmtDate(iso) {
   if (!iso) return "";
   return new Date(iso).toLocaleDateString(undefined, { month: "short", day: "numeric" });
-}
-
-function fmtRemaining(ms) {
-  if (ms <= 0) return "wrapping up";
-  const m = Math.floor(ms / 60000), h = Math.floor(m / 60), mm = m % 60;
-  return h > 0 ? h + "h " + mm + "m left" : mm + "m left";
 }
 
 function render(data) {
@@ -54,8 +45,7 @@ function render(data) {
   const nw = data.now_watching;
 
   if (nw && nw.title) {
-    const ends = new Date(nw.started_at).getTime() + WATCH_HOURS * 3600 * 1000;
-    now.innerHTML = nw.title + ' <span class="left">' + fmtRemaining(ends - Date.now()) + "</span>";
+    now.textContent = nw.title;
   } else {
     now.innerHTML = '<span class="muted">Nothing right now</span>';
   }

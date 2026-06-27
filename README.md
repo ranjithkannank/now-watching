@@ -1,6 +1,6 @@
 # now-watching
 
-A little banner that shows the movie I'm watching right now. After 3 hours it
+A little banner that shows the movie I'm watching right now. After 1 hour it
 flips to "last watched" and the title gets appended to this year's list.
 
 Served free under the existing blog domain at:
@@ -9,7 +9,7 @@ Served free under the existing blog domain at:
 
 It is a plain static page (no Jekyll) plus two GitHub Actions: one to set the
 current movie (triggered from an iPhone Shortcut), one cron job to do the
-3-hour flip.
+1-hour flip.
 
 ## How it works
 
@@ -27,7 +27,7 @@ current movie (triggered from an iPhone Shortcut), one cron job to do the
 - `.github/workflows/set.yml` runs `set` on a `repository_dispatch` event.
 - `.github/workflows/flip.yml` runs `tick` every ~10 minutes on a schedule.
 
-Starting a new movie ends the previous one. The flip is recorded at the 3-hour
+Starting a new movie ends the previous one. The flip is recorded at the 1-hour
 mark, not whenever the cron happened to run.
 
 ## One-time setup
@@ -79,7 +79,7 @@ few seconds the page shows it.
 ## Local testing
 
     python3 scripts/movie.py set "Dune"   # start watching
-    python3 scripts/movie.py tick         # no-op until 3h have passed
+    python3 scripts/movie.py tick         # no-op until 1h has passed
     python3 scripts/movie.py stop         # end it now (manual)
 
     # preview the page (a local server is needed; file:// blocks fetch())
