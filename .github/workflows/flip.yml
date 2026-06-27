@@ -1,0 +1,33 @@
+name: flip
+
+# Every ~10 minutes, promote the current movie to "last watched" once it has
+# been playing for 3 hours. GitHub's scheduled crons can run a few minutes late
+# under load; that only delays the flip slightly, it does not lose data.
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Serialize with the "set" workflow so they never push to data.json at once.
+concurrency:
+  group: movie-data
+  cancel-in-progress: false
+
+jobs:
+  flip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/movie.py tick
+      - name: Commit if changed
+        run: |
+          if ! git diff --quiet; then
+            git config user.name "now-watching bot"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data.json
+            git commit -m "flip: end of viewing window"
+            git push
+          fi

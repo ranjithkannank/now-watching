@@ -1,0 +1,34 @@
+name: set
+
+# Triggered by the Apple Shortcut, which POSTs a repository_dispatch event:
+#   { "event_type": "set_movie", "client_payload": { "title": "Dune" } }
+on:
+  repository_dispatch:
+    types: [set_movie]
+
+permissions:
+  contents: write
+
+# Serialize with the "flip" workflow so they never push to data.json at once.
+concurrency:
+  group: movie-data
+  cancel-in-progress: false
+
+jobs:
+  set:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set now watching
+        env:
+          TITLE: ${{ github.event.client_payload.title }}
+        run: python3 scripts/movie.py set "$TITLE"
+      - name: Commit if changed
+        run: |
+          if ! git diff --quiet; then
+            git config user.name "now-watching bot"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data.json
+            git commit -m "set now watching"
+            git push
+          fi
