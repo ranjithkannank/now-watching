@@ -1,5 +1,8 @@
 {
-  "now_watching": null,
+  "now_watching": {
+    "title": "<Provided Input>",
+    "started_at": "2026-06-27T18:31:31Z"
+  },
   "last_watched": null,
   "watched": []
 }
