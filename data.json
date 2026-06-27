@@ -1,9 +1,9 @@
 {
-  "now_watching": {
+  "now_watching": null,
+  "last_watched": {
     "title": "Widow\u2019s Bay",
-    "started_at": "2026-06-27T18:39:12Z"
+    "finished_at": "2026-06-27T19:39:12Z"
   },
-  "last_watched": null,
   "watched": [
     {
       "title": "Karrupu",
@@ -80,6 +80,11 @@
     {
       "title": "Unlocked",
       "year": 2026
+    },
+    {
+      "title": "Widow\u2019s Bay",
+      "started_at": "2026-06-27T18:39:12Z",
+      "finished_at": "2026-06-27T19:39:12Z"
     }
   ]
 }
