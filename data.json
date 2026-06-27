@@ -1,5 +1,8 @@
 {
-  "now_watching": null,
+  "now_watching": {
+    "title": "Widow\u2019s Bay",
+    "started_at": "2026-06-27T18:39:12Z"
+  },
   "last_watched": null,
   "watched": []
 }
