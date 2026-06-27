@@ -1,5 +1,8 @@
 {
-  "now_watching": null,
+  "now_watching": {
+    "title": "Pipeline test",
+    "started_at": "2026-06-27T18:24:19Z"
+  },
   "last_watched": null,
   "watched": []
 }
