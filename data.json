@@ -1,11 +1,8 @@
 {
-  "now_watching": {
-    "title": "The call",
-    "started_at": "2026-06-27T21:39:19Z"
-  },
+  "now_watching": null,
   "last_watched": {
-    "title": "Widow\u2019s Bay",
-    "finished_at": "2026-06-27T19:39:12Z"
+    "title": "The call",
+    "finished_at": "2026-06-27T22:39:19Z"
   },
   "watched": [
     {
@@ -88,6 +85,11 @@
       "title": "Widow\u2019s Bay",
       "started_at": "2026-06-27T18:39:12Z",
       "finished_at": "2026-06-27T19:39:12Z"
+    },
+    {
+      "title": "The call",
+      "started_at": "2026-06-27T21:39:19Z",
+      "finished_at": "2026-06-27T22:39:19Z"
     }
   ]
 }
