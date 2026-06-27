@@ -1,8 +1,17 @@
 {
   "now_watching": {
-    "title": "<Provided Input>",
-    "started_at": "2026-06-27T18:31:31Z"
+    "title": "Provided Input",
+    "started_at": "2026-06-27T18:32:13Z"
   },
-  "last_watched": null,
-  "watched": []
+  "last_watched": {
+    "title": "<Provided Input>",
+    "finished_at": "2026-06-27T18:32:13Z"
+  },
+  "watched": [
+    {
+      "title": "<Provided Input>",
+      "started_at": "2026-06-27T18:31:31Z",
+      "finished_at": "2026-06-27T18:32:13Z"
+    }
+  ]
 }
