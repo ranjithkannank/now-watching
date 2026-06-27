@@ -66,7 +66,8 @@ function render(data) {
 
   const year = new Date().getFullYear();
   const watched = Array.isArray(data.watched) ? data.watched : [];
-  const thisYear = watched.filter(w => new Date(w.finished_at).getFullYear() === year);
+  const yearOf = w => (w.finished_at ? new Date(w.finished_at).getFullYear() : w.year);
+  const thisYear = watched.filter(w => yearOf(w) === year);
   document.getElementById("year-heading").textContent =
     "Watched in " + year + " (" + thisYear.length + ")";
 
@@ -77,7 +78,13 @@ function render(data) {
   } else {
     thisYear.slice().reverse().forEach(w => {
       const li = document.createElement("li");
-      li.innerHTML = "<span>" + w.title + '</span><span class="when">' + fmtDate(w.finished_at) + "</span>";
+      const t = document.createElement("span");
+      t.textContent = w.title;
+      const when = document.createElement("span");
+      when.className = "when";
+      when.textContent = w.finished_at ? fmtDate(w.finished_at) : "";
+      li.appendChild(t);
+      li.appendChild(when);
       list.appendChild(li);
     });
   }
