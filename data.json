@@ -1,5 +1,8 @@
 {
-  "now_watching": null,
+  "now_watching": {
+    "title": "Influencer",
+    "started_at": "2026-06-28T21:08:34Z"
+  },
   "last_watched": {
     "title": "Fallen",
     "finished_at": "2026-06-28T18:38:50Z"
