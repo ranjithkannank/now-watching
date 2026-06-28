@@ -1,11 +1,8 @@
 {
-  "now_watching": {
-    "title": "Influencer",
-    "started_at": "2026-06-28T21:08:34Z"
-  },
+  "now_watching": null,
   "last_watched": {
-    "title": "Fallen",
-    "finished_at": "2026-06-28T18:38:50Z"
+    "title": "Influencer",
+    "finished_at": "2026-06-28T22:08:34Z"
   },
   "watched": [
     {
@@ -98,6 +95,11 @@
       "title": "Fallen",
       "started_at": "2026-06-28T17:38:50Z",
       "finished_at": "2026-06-28T18:38:50Z"
+    },
+    {
+      "title": "Influencer",
+      "started_at": "2026-06-28T21:08:34Z",
+      "finished_at": "2026-06-28T22:08:34Z"
     }
   ]
 }
