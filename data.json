@@ -1,11 +1,8 @@
 {
-  "now_watching": {
-    "title": "Fallen",
-    "started_at": "2026-06-28T17:38:50Z"
-  },
+  "now_watching": null,
   "last_watched": {
-    "title": "The call",
-    "finished_at": "2026-06-27T22:39:19Z"
+    "title": "Fallen",
+    "finished_at": "2026-06-28T18:38:50Z"
   },
   "watched": [
     {
@@ -93,6 +90,11 @@
       "title": "The call",
       "started_at": "2026-06-27T21:39:19Z",
       "finished_at": "2026-06-27T22:39:19Z"
+    },
+    {
+      "title": "Fallen",
+      "started_at": "2026-06-28T17:38:50Z",
+      "finished_at": "2026-06-28T18:38:50Z"
     }
   ]
 }
