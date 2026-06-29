@@ -1,11 +1,8 @@
 {
-  "now_watching": {
-    "title": "I know what you did last summer",
-    "started_at": "2026-06-29T03:48:33Z"
-  },
+  "now_watching": null,
   "last_watched": {
-    "title": "Influencer",
-    "finished_at": "2026-06-28T22:08:34Z"
+    "title": "I know what you did last summer",
+    "finished_at": "2026-06-29T04:48:33Z"
   },
   "watched": [
     {
@@ -103,6 +100,11 @@
       "title": "Influencer",
       "started_at": "2026-06-28T21:08:34Z",
       "finished_at": "2026-06-28T22:08:34Z"
+    },
+    {
+      "title": "I know what you did last summer",
+      "started_at": "2026-06-29T03:48:33Z",
+      "finished_at": "2026-06-29T04:48:33Z"
     }
   ]
 }
