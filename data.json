@@ -1,5 +1,8 @@
 {
-  "now_watching": null,
+  "now_watching": {
+    "title": "I know what you did last summer",
+    "started_at": "2026-06-29T03:48:33Z"
+  },
   "last_watched": {
     "title": "Influencer",
     "finished_at": "2026-06-28T22:08:34Z"
