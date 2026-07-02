@@ -1,11 +1,8 @@
 {
-  "now_watching": {
-    "title": "I will find you",
-    "started_at": "2026-07-02T02:52:42Z"
-  },
+  "now_watching": null,
   "last_watched": {
-    "title": "Toy Story 5",
-    "finished_at": "2026-06-30T06:42:03Z"
+    "title": "I will find you",
+    "finished_at": "2026-07-02T03:52:42Z"
   },
   "watched": [
     {
@@ -113,6 +110,11 @@
       "title": "Toy Story 5",
       "started_at": "2026-06-30T05:42:03Z",
       "finished_at": "2026-06-30T06:42:03Z"
+    },
+    {
+      "title": "I will find you",
+      "started_at": "2026-07-02T02:52:42Z",
+      "finished_at": "2026-07-02T03:52:42Z"
     }
   ]
 }
