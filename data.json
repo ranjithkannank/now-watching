@@ -1,5 +1,8 @@
 {
-  "now_watching": null,
+  "now_watching": {
+    "title": "I will find you",
+    "started_at": "2026-07-02T02:52:42Z"
+  },
   "last_watched": {
     "title": "Toy Story 5",
     "finished_at": "2026-06-30T06:42:03Z"
