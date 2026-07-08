@@ -1,11 +1,8 @@
 {
-  "now_watching": {
-    "title": "Enough",
-    "started_at": "2026-07-08T02:56:16Z"
-  },
+  "now_watching": null,
   "last_watched": {
-    "title": "I will find you",
-    "finished_at": "2026-07-02T03:52:42Z"
+    "title": "Enough",
+    "finished_at": "2026-07-08T03:56:16Z"
   },
   "watched": [
     {
@@ -118,6 +115,11 @@
       "title": "I will find you",
       "started_at": "2026-07-02T02:52:42Z",
       "finished_at": "2026-07-02T03:52:42Z"
+    },
+    {
+      "title": "Enough",
+      "started_at": "2026-07-08T02:56:16Z",
+      "finished_at": "2026-07-08T03:56:16Z"
     }
   ]
 }
